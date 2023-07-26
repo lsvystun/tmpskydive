@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Simple HTML Page with iFrame</title>
+</head>
 <body>
+    <h1>Hello, I am an HTML page!</h1>
+    <button onclick="openIframe()">Book Now</button>
+    <br>
+    <iframe id="myIframe" style="display: none;"></iframe>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
+    <script>
+        function openIframe() {
+            var iframe = document.getElementById("myIframe");
+            iframe.src = "https://tangerine-hotteok-54a35f.netlify.app/?campaign=default&brand=2&location=5"; // Replace this with the URL you want to open in the iframe
+            iframe.style.display = "block";
+        }
+    </script>
 </body>
 </html>
-
