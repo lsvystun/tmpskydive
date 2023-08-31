@@ -17,8 +17,7 @@
 <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXVM5W3F"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 <!-- End Google Tag Manager (noscript) -->
-    <h1>Hello, I am an HTML page!</h1>
-    <button onclick="openIframe()">Book Now</button>
+    <!-- <button onclick="openIframe()">Book Now</button>
     <br>
     <iframe id="myIframe" style="display: none; width: 100%; height: 400px;"></iframe>
 
@@ -28,6 +27,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             iframe.src = "https://poetic-torrone-e90b5a.netlify.app/?campaign=default&brand=1&location=1&bundle=true"; // Replace this with the URL you want to open in the iframe
             iframe.style.display = "block";
         }
-    </script>
-</body>
+    </script> -->
+        <h1>Hello, I am an HTML page!</h1>
+        <button onclick="openIframe()">Book Now</button>
+    
+        <script>
+            function openIframe() {
+                var url = "https://poetic-torrone-e90b5a.netlify.app/?campaign=default&brand=1&location=1&bundle=true";
+                window.open(url, '_blank');
+            }
+        </script>
+    </body>
 </html>
